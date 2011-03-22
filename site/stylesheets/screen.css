@@ -18,7 +18,7 @@ body {
   border-radius: 5px 5px 0px 0px;
   background: none;
   width: 700px;
-  margin: 40px auto 300px auto;
+  margin: 40px auto 50px auto;
   positon: relative;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
@@ -236,4 +236,11 @@ ul li.col2 {
   border-right: 1px solid #b9b9b9;
   border-left: 1px solid #b9b9b9;
   height: 15px;
+}
+
+/* line 138 */
+p.note {
+  margin: 0 auto 100px auto;
+  width: 700px;
+  text-align: center;
 }
