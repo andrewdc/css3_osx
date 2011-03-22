@@ -1,0 +1,139 @@
+@import "_base"
+
+body
+  font-family: "Times New Roman", Georgia, serif
+  font-size: 75%
+.window
+  @include borderRadius(5px, 5px, 0px, 0px)
+  background: none
+  width: 700px 
+  margin: 40px auto 300px auto
+  positon: relative
+  @include boxShadow (0, 0, 20px, rgba(0,0,0,0.4))
+  behavior: url(PIE.htc)
+  .content
+    position: relative
+    border-top: 1px solid #848484
+    border-right: 1px solid #B9B9B9
+    border-bottom: 1px solid #838383
+    border-left: 1px solid #B9B9B9
+    background: #fff
+    padding: 40px 0 200px 0
+  .main 
+    width: 400px 
+    margin: 40px auto 0 auto
+    border: 2px solid #000
+    padding: 5px
+h1
+  @include lin-grad(#DBDBDB, #ACACAC)
+  :border-top 1px solid #EBEBEB
+  :font-family "Lucida Grande", helvetica, arial, sans-serif
+  :margin 0em
+  :padding 2px 0 2px 0
+  position: relative
+  @include borderRadius(5px, 5px, 0px, 0px)
+  behavior: url(PIE.htc)
+  text-align: center
+  :font-size 1em
+  :font-weight normal
+  :text-shadow #D8D8D8 0px 1px 0px
+  a
+    :position absolute
+    :display block
+    :height 10px
+    :width 10px
+    @include borderRadius(10em,10em,10em,10em)
+    border: 1px solid #303030
+    top: 3px
+    left: 0
+    z-index: 10
+    behavior: url(PIE.htc)
+    &.one 
+      left: 5px
+      @include lin-grad(#FF2F2F, #FCA4B0)
+      -webkit-box-shadow: inset 0 1px 5px #B42531
+      -moz-box-shadow: inset 0 1px 5px #B42531
+      box-shadow: inset 0 1px 5px #B42531
+      behavior: url(PIE.htc)
+    &.two
+      left: 23px
+      @include lin-grad(#FC8F1B, #FFF7C0)
+      -webkit-box-shadow: inset 0 1px 5px #C56F4A
+      -moz-box-shadow: inset 0 1px 5px #C56F4A
+      box-shadow: inset 0 1px 5px #C56F4A
+      behavior: url(PIE.htc)
+    &.three
+      left: 41px
+      @include lin-grad(#89D519, #E7FF99)
+      -webkit-box-shadow: inset 0 1px 5px #688F41
+      -moz-box-shadow: inset 0 1px 5px #688F41
+      box-shadow: inset 0 1px 5px #688F41
+      behavior: url(PIE.htc)
+    &:before 
+      content: '' 
+      position: absolute 
+      width: 2px 
+      height: 2px
+      padding: 0px
+      :background  rgba(225,225,225,0.8)
+      :top 1px 
+      :left 4px
+      @include boxShadow(0,0,4px, rgba(225,225,225,1))
+      behavior: url(PIE.htc)
+      z-index: 12
+    &:after 
+      content: '' 
+      position: absolute 
+      border-bottom: 1px solid #D3D3D3
+      @include borderRadius(1em,1em,10em,10em)
+      behavior: url(PIE.htc)
+      :height 11px
+      :width 11px
+      padding: 0px
+      :background none
+      top: 0
+      left: 0
+      z-index: 1
+      
+h2, h3 
+  font-weight: normal
+  text-align: center   
+h2 
+  margin: 0px 0 2px 0px
+  padding: 0
+  font-size: 1.8em  
+h3 
+  margin: 0px 25px 5px 25px 
+  font-size: 1em 
+  border-bottom: 1px solid #000 
+  color: #A5A5A5
+ul 
+  margin: 0
+  padding: 0
+  list-style: none
+  overflow: hidden
+  p 
+    margin: 0
+    padding: 10px 5px
+    font-size: 1.2em
+  li 
+    float: left
+    width: 180px
+    &.col1 
+      background: #FF0603
+    &.col2 
+      background: #3C841C
+      float: right
+      text-align: right       
+      
+.footer
+  @include lin-grad(#ADADAD, #A0A0A0)
+  behavior: url(PIE.htc)
+  :border-top 1px solid  #C8C8C8
+  border-bottom: 1px solid #838383
+  border-right: 1px solid #B9B9B9
+  border-left: 1px solid #B9B9B9
+  height: 15px
+  
+
+       
